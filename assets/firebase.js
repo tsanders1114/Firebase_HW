@@ -33,6 +33,9 @@
     console.log(train.firstTrain)
     console.log(train.freQ)
 
+    $("#trainTable > tbody").append("<tr><th>" + newTrain + "</th><th>" + newDest + "</th><th>" + freQ + "</th><th>" + firstTrain + "</th></tr>");
+
+
   })
 
  database.ref().on("child_added", function(snapshot, prevChildKey) {
@@ -43,13 +46,13 @@
     console.log(train.freQ)
 
   console.log("Previous Post ID: " + prevChildKey);
+
+  //$("#trainTable > tbody").append("<tr><th>" + train + "</th><th>" + newDest + "</th><th>" + freQ + "</th><th>" + firstTrain + "</th><th>" + minUntil + "</th></tr>");
+
 });
 
 
+//Dom
 //console.log(train.newTrain)
-
-//$("#trainTable > tbody").append
-//$("#trainTable > tbody").append("<tr><th>"+)
-
-
+//$("#trainTable > tbody").append("<tr><th>" + newTrain + "</th><th>" + newDest + "</th><th>" + freQ + "</th><th>" + firstTrain + "</th><th>" + minUntil + "</th></tr>");
 
